@@ -19,7 +19,7 @@
 - The game has 2 players, playing in rounds
 - In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
 - BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
-- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score.
+- The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score.
 - After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
       </pre>
@@ -28,19 +28,24 @@
 
   <div class="container">
     <div class="grid-container">
-      <div class="player1 active">PLAYER 1</div>
-      <div class="dice">dice</div>
-      <div class="player2 active">PLAYER 2</div>
-      <div class="score1 active">0</div>
-      <div class="score2 active">0</div>
+      <div id="p1" class="player1 active">PLAYER 1</div>
+      <div id="p1-score" class="score1 active">0</div>
+
+      <div id="p2" class="player2">PLAYER 2</div>
+      <div id="p2-score" class="score2">0</div>
+
+      <div class="dice"><img class="dice-image" src="dice-1.png" alt="Dice"></div>
       <div class="current1 red-box"><span style="color:black;">Current</span><br/>0</div>
       <div class="current2 red-box"><span style="color:black;">Current</span><br/>0</div>
     </div>
   </div>
 
-  <button class="grid-item new-game">NEW GAME</button>
-  <button class="grid-item roll-dice">ROLL DICE</button>
-  <button class="grid-item hold-dice">HOLD</button>
+  <button class="grid-item new-game"><i class="ion-ios-albums"></i> NEW GAME</button>
+  <button class="grid-item roll-dice"><i class="ion-ios-refresh"></i> ROLL DICE</button>
+  <button class="grid-item hold-dice"><i class="ion-ios-share"></i> HOLD</button>
 
+  <script src="master.js">
+
+  </script>
   </body>
 </html>

@@ -23,6 +23,11 @@
   height: 200px;
   line-height: 124px;
 }
+.dice img {
+  width: 10em;
+  height: 10em;
+  border: 2px solid black;
+}
 .score1 {
   grid-column: 1;
   grid-row: 2;
@@ -59,9 +64,18 @@ button {
   font-size: 20px;
   cursor: pointer;
 }
+i {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 32px;
+  line-height: 1;
+  vertical-align: text-top;
+  margin-top: -4px;
+  transition: margin 0.3s;
+}
 
 button:hover {font-weight: 600;}
-button:hover i {margin-right: 20px;}
+button:hover i {margin-right: 5px;}
 button:focus {outline: none;}
 
 .new-game {top: 411px;}
